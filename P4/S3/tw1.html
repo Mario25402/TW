@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S3 E1</title>
+    <style>
+        header {
+            background-color: powderblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        header img {
+            width: 20%;
+            max-width: 235px;
+        }
+
+        nav {
+            background-color: rgb(248, 132, 171);
+            text-align: center;
+            display: flex;
+        }
+
+        nav ul {
+            display: flex;
+            padding: 0px;
+        }
+
+        nav ul li {
+            padding: 3px 10px 3px 10px;
+        }
+
+        main {
+            display: flex;
+        }
+
+        main section{
+            flex-basis: 80%;
+        }
+
+        main aside{
+            flex-basis: 20%;
+            background-color: lightslategray;
+            display: flex;
+            flex-direction: column;
+        }
+
+        footer {
+            background-color: palegreen;
+            
+            text-align: center;
+        }
+
+        footer>p {
+            margin: 0;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 15px;
+        }
+
+        a {
+            text-decoration: none;
+            color: rgb(60, 60, 185);
+        }
+
+        footer>p::before {
+            content: "\00a9";
+        }
+
+        #galeria {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: flex-end;
+        }
+
+        .imagen {
+            border: 1px solid;
+            max-width: 235px;
+            margin: 5px;
+        }
+
+        .imagen img {
+            width: 100%;
+            border: 1px solid;
+            padding: 5px;
+            box-sizing: border-box;
+            border-color: lightgray;
+        }
+
+        .imagen h2 {
+            font-size: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="../img/zoo.png" alt="Icono"></img>
+        <h1>Zooweb</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="">Inicio</a></li>
+            <li><a href="">Animales</a></li>
+            <li><a href="">Localizaciones</a></li>
+            <li><a href="">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="galeria">
+            <div class="imagen">
+                <img src="../img/tucan.jpg" alt="Tucán">
+                <h2>Túcan</h2>
+            </div>
+            <div class="imagen">
+                <img src="../img/leon.jpg" alt="León">
+                <h2>León</h2>
+            </div>
+            <div class="imagen">
+                <img src="../img/tigre.jpg" alt="Tigre">
+                <h2>Tigre</h2>
+            </div>
+            <div class="imagen">
+                <img src="../img/jirafa.jpg" alt="Jirafa">
+                <h2>Jirafa</h2>
+            </div>
+            <div class="imagen">
+                <img src="../img/koala.webp" alt="Koala">
+                <h2>Koala</h2>
+            </div>
+            <div class="imagen">
+                <img src="../img/rana.jpg" alt="Rana">
+                <h2>Rana</h2>
+            </div>
+            <div class="imagen">
+                <img src="../img/vaca.webp" alt="Vaca">
+                <h2>Vaca</h2>
+            </div>
+            <div class="imagen">
+                <img src="../img/llama.jpg" alt="Llama">
+                <h2>LLama</h2>
+            </div>
+        </section>
+
+        <aside>
+            <ul>
+                <li>África</li>
+                <li>América</li>
+                <li>Asia</li>
+                <li>Europa</li>
+                <li>Oceania</li>
+            </ul>
+        </aside>
+    </main>
+
+    <footer>
+        <p>Tecnoweb</p>
+    </footer>
+</body>
+
+</html>

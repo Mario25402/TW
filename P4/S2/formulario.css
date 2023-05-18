@@ -1,0 +1,111 @@
+.formulario{
+    border: 1px solid gray;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body > div > h1:first-of-type{
+    color: black;
+    border: none;
+    font-size: 25px;
+    text-align: left;
+    margin-left: 0;
+    margin-top: 0;
+}
+
+div > h1{
+    color: gray;
+    border-right: 2px solid lightgray;
+    border-right-style: dotted;
+    padding-right: 10px;
+    text-align: right;
+    font-size: 20px;
+    margin-left: 50px;
+    white-space: nowrap;
+}
+
+form > div:first-of-type > h1{
+    padding-left: 28px;
+}
+
+label{
+    color: gray;
+}
+
+.ayuda > p{
+    color: green;
+    text-align: left;
+    opacity: 0;
+}
+
+.subform{
+    border: 1px solid gray;
+    margin: 10px;
+    padding: 10px;
+    font-size: 12px;
+    display: flex;
+}
+
+.entrada{
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 10px;
+}
+
+.entrada label{
+    margin: 5px;
+    margin-left: 15px;
+}
+
+.entrada input{
+    width: 500px;
+    height: 35px;
+}
+
+.datos{
+    margin: 10px;
+}
+
+.subform:first-of-type > .datos > .entrada:nth-child(3) input{
+    width: 400px;
+}
+
+.subform:not(:first-of-type) > .datos > .entrada:nth-child(2) input{
+    width: 500px;
+}
+
+.subform:hover{
+    background-color: lightgray;          
+}
+
+.subform:hover .ayuda > p{
+    opacity: 1;
+}
+
+.botones{
+    border: 1px solid gray;
+    padding: 5px;
+    text-align: center;
+    display:inline-block;
+    position: relative;
+    left: 35%;
+}
+
+.botones input{
+    margin: 0 30px;
+    height: 35px;
+}
+
+.botones input:first-child{
+    margin-left: 150px;
+}
+
+.botones input:last-child{
+    margin-right: 150px;
+}
+
+select{
+    width: 300px;
+    height: 35px;
+    margin-bottom: 5px;
+}

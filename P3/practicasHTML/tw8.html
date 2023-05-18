@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ejercicio 8</title>
+
+	<style type="text/css">
+		label { display:block; }
+	</style>
+</head>
+
+<body>
+	<h1>Datos del usuario</h1>
+
+	<!-- FORMULARIO 1 -->
+
+	<form action="./procesar.php" method="POST" enctype="multipart/form-data">
+	<label>Nombre: <input type="text" name="Nombre"></label>
+	<label>Clave: <input type="password" name="Password"></label>
+	<input type="submit" name="enviar" value="Enviar">
+	</form><br>
+
+	<!-- FORMULARIO 2 -->
+
+	<form  novalidate="true" action="./procesar.php" method="POST" enctype="multipart/form-data">
+	<label>Nombre: <input required="true" type="text" name="Nombre"></label>
+	<label>Clave: <input type="password" name="Password"></label>
+	<input type="submit" name="enviar" value="Enviar">
+	</form><br>
+
+	<!-- FORMULARIO 3 -->
+
+	<form action="./procesar.php" method="POST" enctype="multipart/form-data">
+	<label>Nombre: <input placeholder="Usuario obligatorio" required="true" type="text" name="Nombre"></label>
+	<label>Clave: <input placeholder="Introduce clave" type="password" name="Password"></label>
+	<input type="submit" name="enviar" value="Enviar">
+	</form><br>
+
+	<!-- FORMULARIO 4 -->
+
+	<form action="./procesar.php" method="POST" enctype="multipart/form-data">
+	<label>Nombre: <input placeholder="Usuario obligatorio" required="true" type="text" name="Nombre"></label>
+	<label>Clave: <input placeholder="Introduce clave" type="password" name="Password"></label>
+	<label>Nacionalidad: <input type="text" name="Nacionalidad" value="España"></label>
+	<input type="submit" name="enviar" value="Enviar">
+	</form><br>
+
+	<!-- FORMULARIO 5 -->
+
+	<form action="./procesar.php" method="POST" enctype="multipart/form-data">
+	<label>Nombre: <input placeholder="Usuario obligatorio" required="true" type="text" name="Nombre"></label>
+	<label>Clave: <input placeholder="Introduce clave" type="password" name="Password"></label>
+	<label>Nacionalidad: <input type="text" name="Nacionalidad" value="España"></label>
+	<input type="submit" name="enviar" value="Enviar">
+	</form><br>
+
+	<!-- FORMULARIO 6 -->
+
+	<form action="./procesar.php" method="POST" enctype="multipart/form-data">
+	<label>Nombre: <input placeholder="Usuario obligatorio" required="true" type="text" name="Nombre"></label>
+	<label>Clave: <input placeholder="Introduce clave" type="password" name="Password"></label>
+	<label>Nacionalidad: <input type="text" name="Nacionalidad" value="España"></label>
+	<label>Email: <input type="email" name="Email" placeholder="example@ex.com"></label>
+	<input type="submit" name="enviar" value="Enviar">
+	</form><br>
+
+	<!-- FORMULARIO 7 -->
+
+	<form action="./procesar.php" method="POST" enctype="multipart/form-data">
+	<label>Nombre: <input placeholder="Usuario obligatorio" required="true" type="text" name="Nombre"></label>
+	<label>Clave: <input placeholder="Introduce clave" type="password" name="Password"></label>
+	<label>Nacionalidad: <input type="text" name="Nacionalidad" value="España"></label>
+	<label>Email: <input type="email" name="Email" placeholder="example@ex.com"></label>
+	<label>Sexo:
+	<select name="Sexo">
+		<option value="Masculino"> Masculino</option>
+		<option value="Masculino"> Femenino</option>
+		<option selected="true" value="No especificado"> No especificado</option>
+	</select></label>
+
+	<label>Tratamiento de datos:
+	<select name="Almacenamiento">
+		<option value="TOTAL"> Acepta el almacenamiento de mis datos y el envío a terceros</option>
+		<option value="PARCIAL"> Acepta el almacenamiento de mis datos pero no el envío a terceros</option>
+		<option value="NINGUNO"> No acepta el almacenamiento ni el envío de datos a terceros</option>
+	</select></label>
+	<input type="submit" name="enviar" value="Enviar">
+	</form><br>
+
+	<!-- FORMULARIO 8 -->
+
+	<form action="./procesar.php" method="POST" enctype="multipart/form-data">
+	<label>Nombre: <input placeholder="Usuario obligatorio" required="true" type="text" name="Nombre"></label>
+	<label>Clave: <input placeholder="Introduce clave" type="password" name="Password"></label>
+	<label>Nacionalidad: <input type="text" name="Nacionalidad" value="España"></label>
+	<label>Email: <input type="email" name="Email" placeholder="example@ex.com"></label>
+	<label>Sexo:
+	<select name="Sexo">
+		<option value="Masculino"> Masculino</option>
+		<option value="Masculino"> Femenino</option>
+		<option selected="true" value="No especificado"> No especificado</option>
+	</select></label>
+	
+	<label>Tratamiento de datos:
+	<select name="Almacenamiento">
+		<option value="TOTAL"> Acepta el almacenamiento de mis datos y el envío a terceros</option>
+		<option value="PARCIAL"> Acepta el almacenamiento de mis datos pero no el envío a terceros</option>
+		<option value="NINGUNO"> No acepta el almacenamiento ni el envío de datos a terceros</option>
+	</select></label>
+	<label>Idioma para comunicaciones:
+		<label><input checked="true" type="radio" name="idioma" value="es"> Español </label>
+		<label><input type="radio" name="idioma" value="en"> Ingles </label>
+		<label><input type="radio" name="idioma" value="fr"> Francés </label>
+	</label>
+	<input type="submit" name="enviar" value="Enviar">
+	</form><br>
+
+	<!-- FORMULARIO 9 -->
+
+	<form action="./procesar.php" method="POST" enctype="multipart/form-data">
+	<label>Nombre: <input placeholder="Usuario obligatorio" required="true" type="text" name="Nombre"></label>
+	<label>Clave: <input placeholder="Introduce clave" type="password" name="Password"></label>
+	<label>Nacionalidad: <input type="text" name="Nacionalidad" value="España"></label>
+	<label>Email: <input type="email" name="Email" placeholder="example@ex.com"></label>
+	<label>Sexo:
+	<select name="Sexo">
+		<option value="Masculino"> Masculino</option>
+		<option value="Masculino"> Femenino</option>
+		<option selected="true" value="No especificado"> No especificado</option>
+	</select></label>
+	
+	<label>Tratamiento de datos:
+	<select name="Almacenamiento">
+		<option value="TOTAL"> Acepta el almacenamiento de mis datos y el envío a terceros</option>
+		<option value="PARCIAL"> Acepta el almacenamiento de mis datos pero no el envío a terceros</option>
+		<option value="NINGUNO"> No acepta el almacenamiento ni el envío de datos a terceros</option>
+	</select></label>
+	<label>Idioma para comunicaciones:
+		<label><input checked="true" type="radio" name="idioma" value="es"> Español </label>
+		<label><input type="radio" name="idioma" value="en"> Ingles </label>
+		<label><input type="radio" name="idioma" value="fr"> Francés </label>
+	</label>
+
+	<label>Aficiones: 
+		<label><input type="checkbox" value="musica" name="aficiones[]"> Escuchar música</label>
+		<label><input type="checkbox" value="libros" name="aficiones[]"> Leer libros</label>
+		<label><input type="checkbox" value="cine" name="aficiones[]"> Cine</label>
+		<label><input type="checkbox" value="deporte" name="aficiones[]"> Deporte</label>
+	</label>
+	<input type="submit" name="enviar" value="Enviar">
+	</form><br>
+
+	<!-- FORMULARIO 10 -->
+
+	<form action="./procesar.php" method="POST" enctype="multipart/form-data">
+	<label>Nombre: <input placeholder="Usuario obligatorio" required="true" type="text" name="Nombre"></label>
+	<label>Clave: <input placeholder="Introduce clave" type="password" name="Password"></label>
+	<label>Nacionalidad: <input type="text" name="Nacionalidad" value="España"></label>
+	<label>Email: <input type="email" name="Email" placeholder="example@ex.com"></label>
+	<label>Sexo:
+	<select name="Sexo">
+		<option value="Masculino"> Masculino</option>
+		<option value="Masculino"> Femenino</option>
+		<option selected="true" value="No especificado"> No especificado</option>
+	</select></label>
+	
+	<label>Tratamiento de datos:
+	<select name="Almacenamiento">
+		<option value="TOTAL"> Acepta el almacenamiento de mis datos y el envío a terceros</option>
+		<option value="PARCIAL"> Acepta el almacenamiento de mis datos pero no el envío a terceros</option>
+		<option value="NINGUNO"> No acepta el almacenamiento ni el envío de datos a terceros</option>
+	</select></label>
+	<label>Idioma para comunicaciones:
+		<label><input checked="true" type="radio" name="idioma" value="es"> Español </label>
+		<label><input type="radio" name="idioma" value="en"> Ingles </label>
+		<label><input type="radio" name="idioma" value="fr"> Francés </label>
+	</label>
+
+	<label>Aficiones: 
+		<label><input type="checkbox" value="musica" name="aficiones[]"> Escuchar música</label>
+		<label><input type="checkbox" value="libros" name="aficiones[]"> Leer libros</label>
+		<label><input type="checkbox" value="cine" name="aficiones[]"> Cine</label>
+		<label><input type="checkbox" value="deporte" name="aficiones[]"> Deporte</label>
+	</label>
+	<label>Fecha: <input type="date"></label>
+	<label>Semana: <input type="week"></label>
+	<input type="submit" name="enviar" value="Enviar">
+	</form><br>
+
+	<!-- FORMULARIO 11 -->
+
+	<form action="./procesar.php" method="POST" enctype="multipart/form-data">
+	<label>Nombre: <input placeholder="Usuario obligatorio" required="true" type="text" name="Nombre"></label>
+	<label>Clave: <input placeholder="Introduce clave" type="password" name="Password"></label>
+	<label>Nacionalidad: <input type="text" name="Nacionalidad" value="España"></label>
+	<label>Email: <input type="email" name="Email" placeholder="example@ex.com"></label>
+	<label>Sexo:
+	<select name="Sexo">
+		<option value="Masculino"> Masculino</option>
+		<option value="Masculino"> Femenino</option>
+		<option selected="true" value="No especificado"> No especificado</option>
+	</select></label>
+	
+	<label>Tratamiento de datos:
+	<select name="Almacenamiento">
+		<option value="TOTAL"> Acepta el almacenamiento de mis datos y el envío a terceros</option>
+		<option value="PARCIAL"> Acepta el almacenamiento de mis datos pero no el envío a terceros</option>
+		<option value="NINGUNO"> No acepta el almacenamiento ni el envío de datos a terceros</option>
+	</select></label>
+	<label>Idioma para comunicaciones:
+		<label><input checked="true" type="radio" name="idioma" value="es"> Español </label>
+		<label><input type="radio" name="idioma" value="en"> Ingles </label>
+		<label><input type="radio" name="idioma" value="fr"> Francés </label>
+	</label>
+
+	<label>Aficiones: 
+		<label><input type="checkbox" value="musica" name="aficiones[]"> Escuchar música</label>
+		<label><input type="checkbox" value="libros" name="aficiones[]"> Leer libros</label>
+		<label><input type="checkbox" value="cine" name="aficiones[]"> Cine</label>
+		<label><input type="checkbox" value="deporte" name="aficiones[]"> Deporte</label>
+	</label>
+	<label>Fecha: <input type="date"></label>
+	<label>Semana: <input type="week"></label>
+	<label><input type="hidden" name="Versión" value="1.0"></label>
+	<input type="submit" name="enviar" value="Enviar">
+	</form><br>
+
+	<!-- FORMULARIO 12 -->
+
+	<form action="./procesar.php" method="POST" enctype="multipart/form-data">
+	<label>Nombre: <input readonly="true" placeholder="Usuario obligatorio" required="true" type="text" name="Nombre" value="pepemartin"></label>
+	<label>Clave: <input readonly="true" value="miclave" placeholder="Introduce clave" type="password" name="Password"></label>
+	<label>Nacionalidad: <input type="text" name="Nacionalidad" value="España" readonly="true"></label>
+	<label>Email: <input type="email" name="Email" placeholder="example@ex.com" value="pepemartin@miservidor.com" readonly="true"></label>
+	<label>Sexo:
+	<select readonly="true" name="Sexo">
+		<option selected="true" value="Masculino"> Masculino</option>
+		<option disabled="true" value="Femenino"> Femenino</option>
+		<option disabled="true" value="No especificado"> No especificado</option>
+	</select></label>
+	
+	<label>Tratamiento de datos:
+	<select readonly="true" name="Almacenamiento">
+		<option selected="true" value="TOTAL"> Acepta el almacenamiento de mis datos y el envío a terceros</option>
+		<option disabled="true" value="PARCIAL"> Acepta el almacenamiento de mis datos pero no el envío a terceros</option>
+		<option disabled="true" value="NINGUNO"> No acepta el almacenamiento ni el envío de datos a terceros</option>
+	</select></label>
+	<label>Idioma para comunicaciones:
+		<label><input disabled="true" type="radio" name="idioma" value="es"> Español </label>
+		<label><input checked="true" type="radio" name="idioma" value="en"> Ingles </label>
+		<label><input disabled="true" type="radio" name="idioma" value="fr"> Francés </label>
+	</label>
+
+	<label>Aficiones: 
+		<label><input disabled="true" type="checkbox" value="musica" name="aficiones[]"> Escuchar música</label>
+		<label><input readonly="true" checked="true" type="checkbox" value="libros" name="aficiones[]"> Leer libros</label>
+		<label><input disabled="true" type="checkbox" value="cine" name="aficiones[]"> Cine</label>
+		<label><input disabled="true" type="checkbox" value="deporte" name="aficiones[]"> Deporte</label>
+	</label>
+	<label>Fecha: <input type="date" value="2000-01-01" readonly="true"></label>
+	<label>Semana: <input type="week" value="18" readonly="true"></label>
+	<label><input type="hidden" name="Versión" value="1.0"></label>
+	<input type="submit" name="enviar" value="Enviar">
+	</form><br>
+
+	<!-- Sí, ya que para nosotros puede ser un procesado incesario ya que siempre lo haremos de la misma manera, pero puede ser que el usuario no lo sepa y deberemos indicarselo de alguna manera. -->
+
+	<!-- FORMULARIO 13 -->
+
+	<form action="./procesar2.php" method="POST" enctype="multipart/form-data">
+	<label>Nombre: <input readonly="true" placeholder="Usuario obligatorio" required="true" type="text" name="Nombre" value="pepemartin"></label>
+	<label>Clave: <input readonly="true" value="miclave" placeholder="Introduce clave" type="password" name="Password"></label>
+	<label>Nacionalidad: <input type="text" name="Nacionalidad" value="España" readonly="true"></label>
+	<label>Email: <input type="email" name="Email" placeholder="example@ex.com" value="pepemartin@miservidor.com" readonly="true"></label>
+	<label>Sexo:
+	<select readonly="true" name="Sexo">
+		<option selected="true" value="Masculino"> Masculino</option>
+		<option disabled="true" value="Femenino"> Femenino</option>
+		<option disabled="true" value="No especificado"> No especificado</option>
+	</select></label>
+	
+	<label>Tratamiento de datos:
+	<select readonly="true" name="Almacenamiento">
+		<option selected="true" value="TOTAL"> Acepta el almacenamiento de mis datos y el envío a terceros</option>
+		<option disabled="true" value="PARCIAL"> Acepta el almacenamiento de mis datos pero no el envío a terceros</option>
+		<option disabled="true" value="NINGUNO"> No acepta el almacenamiento ni el envío de datos a terceros</option>
+	</select></label>
+	<label>Idioma para comunicaciones:
+		<label><input disabled="true" type="radio" name="idioma" value="es"> Español </label>
+		<label><input checked="true" type="radio" name="idioma" value="en"> Ingles </label>
+		<label><input disabled="true" type="radio" name="idioma" value="fr"> Francés </label>
+	</label>
+
+	<label>Aficiones: 
+		<label><input disabled="true" type="checkbox" value="musica" name="aficiones[]"> Escuchar música</label>
+		<label><input readonly="true" checked="true" type="checkbox" value="libros" name="aficiones[]"> Leer libros</label>
+		<label><input disabled="true" type="checkbox" value="cine" name="aficiones[]"> Cine</label>
+		<label><input disabled="true" type="checkbox" value="deporte" name="aficiones[]"> Deporte</label>
+	</label>
+	<label>Fecha: <input type="date" value="2000-01-01" readonly="true"></label>
+	<label>Semana: <input type="week" value="18" readonly="true"></label>
+	<label><input type="hidden" name="Versión" value="1.0"></label>
+	<label><input type="file" name="Imagen"></label>
+	<input type="submit" name="enviar" value="Enviar">
+	</form><br>
+</body>
+</html>

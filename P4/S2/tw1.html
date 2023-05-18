@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S2 E1</title>
+    <style>
+        nav, p {
+            border: 5px solid;
+        }
+
+        nav {
+            width: 80%;
+            margin: auto;
+            display: flex;
+        }
+
+        p {
+            background-color: lightgray;
+            margin: 0;
+            text-align: center;
+        }
+
+        .primero {
+            border-color: red;
+            flex-basis: 20%;
+            text-align: left;
+        }
+
+        .primero::before{
+            content: "\00ab";
+        }
+
+        .medio {
+            border-color: green;
+            flex-basis: 60%;
+        }
+
+        .final {
+            border-color: blue;
+            flex-basis: 20%;
+            text-align: right;
+        }
+
+        .final::after{
+            content: "\00bb";
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <p class="primero">Anterior</p><p class="medio">Medio</p><p class="final">Siguiente</p>
+    </nav>
+</body>
+
+</html>

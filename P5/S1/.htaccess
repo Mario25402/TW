@@ -1,0 +1,4 @@
+RewriteEngine on
+ReWriteCond %{REQUEST_FILENAME} !-f
+ReWriteCond %{REQUEST_FILENAME} !-d
+ReWriteRule . procesaerror.php [L]

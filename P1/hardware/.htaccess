@@ -1,0 +1,5 @@
+<IfModule mod_dir.c>
+	DirectoryIndex alternativo.html
+</IfModule>
+
+# Alias "/hardware/bestcpu" "/home/lucia/public_html/hardware/cpu/intel/i9-11900k"

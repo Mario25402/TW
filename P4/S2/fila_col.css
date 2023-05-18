@@ -1,0 +1,32 @@
+h2 {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.imagen {
+    border: 1px solid;
+    padding: 5px;
+    margin: 10px;
+
+    border-color: gray;
+    display: inline-block;
+    vertical-align: bottom;
+    box-sizing: border-box;
+}
+
+.imagen > img{
+    width: 100%;
+    text-align: center;
+}
+
+.fila.col1 > .imagen{
+    width: 90%;
+}
+
+.fila.col2 > .imagen{
+    width: 45%;
+}
+
+.fila.col3 > .imagen{
+    width: 30%;
+}

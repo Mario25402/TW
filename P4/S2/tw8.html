@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S2 E8</title>
+    <style>
+        a {
+            background-color: rgb(76, 169, 192);
+            padding: 15px;
+            color: white;
+            text-decoration: none;
+            border: 2px solid blue;
+            border-radius: 5px;
+
+            width: 100px;
+            margin-top: -20px;
+            display: inline-block;
+            text-align: center;
+        }
+
+        a:hover {
+            background-color: darkred;
+            border-radius: 15px;
+            box-shadow: 2px 2px 2px 2px lightgray;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+
+        /* Menú principal */
+
+        .menu {
+            background-color: sandybrown;
+            padding-bottom: 70px;
+        }
+
+        .menu ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu li {
+            float: left;
+            margin: 10px;
+            list-style-type: none;
+            margin-top: 25px;
+            position: relative;
+        }
+
+        /* Menú 1er nivel */
+
+        .menu ul li ul {
+            display: none;
+            position: absolute;
+        }
+
+        .menu ul li ul a{
+            width: 200px;
+            text-align: left;
+        }
+
+        .menu ul li ul li{
+            margin: 10px;
+        }
+
+        /* Menú 2º nivel */
+
+        .menu ul li:hover > ul {
+            display: block;
+            margin-top: 10px;
+            white-space: nowrap;
+        }
+
+        .menu ul li ul li:hover ul{
+            margin-left: 150px;
+            margin-top: -45px;
+        }
+
+        .menu ul li ul li ul li{
+            margin-left: 85px;
+        }
+
+        .menu ul li ul li ul a{
+            width: 275px;
+        }
+
+        /* Menu 3er nivel*/
+
+        .menu ul li ul li ul li:hover > ul{
+            margin-left: 225px;
+        }
+
+        .menu ul li ul li ul li ul a{
+            width: 200px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <nav class="menu">
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Sobre mi</a>
+                <ul>
+                    <li><a href="#">Breve introducción</a></li>
+                    <li><a href="#">Infancia</a></li>
+                    <li><a href="#">Adolescencia</a></li>
+                    <li><a href="#">Presente</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Formación</a>
+                <ul>
+                    <li><a href="#">Formáción básica</a></li>
+                    <li><a href="#">Secundaria</a></li>
+                    <li><a href="#">Universidad</a>
+                        <ul>
+                            <li><a href="#">Grado en Biología</a></li>
+                            <li><a href="#">Grado en Ingeniería Informática</a>
+                                <ul>
+                                    <li><a href="#">Mención</a></li>
+                                    <li><a href="#">TFG</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Máster en Biología Computacional</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Complementos</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Aficiones</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </nav>
+    <div>
+        <p>... continua la página ...</p>
+    </div>
+
+</body>
+
+</html>

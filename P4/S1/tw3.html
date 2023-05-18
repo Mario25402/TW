@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<!--
+    La regla 1 se aplica a ya que a partir de la línea 9 hasta antes de la 33 está contenido en un section con el id #ftecnica
+
+    La regla 2 se aplica a todas las secciones
+
+    La regla 3 se aplica a los span que sean hijos directos de un li y que no sea el primer hijo
+
+    La regla 4 es para un span que sea el segundo hijo
+
+    La regla 5 se aplicará a cualquier span que sea hijo de un li
+
+    La regla 6 se aplicará a cualquier clase que se llame enfasis
+
+    La regla 7 solo es para un li que no sea el último hijo directo de un span
+
+    La regla 8 se aplica a los dos primeros li's que sean hijos de algo
+
+    La regla 9, cualquier tag que tenga id = "bryan"
+
+    La regla 10 es para un li de la clase "main" hijo directo de un ul que sea hijo directo de un section
+
+    La regla 11, un h2 hijo de un tag con id = "ftecnica"
+
+    La regla 12, un h2 hijo de un section
+
+    La regla 13 es el ultimo li hijo de un li hijo de una seccion con id = "ftecnica" 
+
+    La regla 14, para cualquier tag que se llame #betsy
+
+    La regla 15 se aplicará a un li que sea el útlimo hijo directo de un ul que sea hijo directo de un section que vuelva a ser hijo diirecto de un section y que sea hijo directo del main
+
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+    El color se decidirá según la especificidad, a mayor especificidad (#>clase>tag), mejor. 
+
+    Por ejemplo, la línea 33, la regla 15 tiene mayor suma de especificidad que la regla 14, pero la regla 14 se aplica a un id que tiene mayor peso que los demás
+
+    Lo mismo pasa en la línea 29
+-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S1 E3</title>
+    <style>
+        #ftecnica {
+            color: gold;
+        }
+
+        section {
+            color: green;
+        }
+
+        li>span:not(:first-child) {
+            color: aqua;
+        }
+
+        span:nth-child(2) {
+            color: red;
+        }
+
+        li span {
+            color: blue;
+        }
+
+        .enfasis {
+            color: pink;
+        }
+
+        span > li:not(:nth-last-child) {
+            color: yellow;
+        }
+
+        li:nth-child(2n) {
+            color: salmon;
+        }
+
+        #bryan {
+            color: gray;
+        }
+
+        section>ul>li.main {
+            color: royalblue;
+        }
+
+        #ftecnica h2 {
+            color: plum;
+        }
+
+        section h2 {
+            color: skyblue;
+        }
+
+        section#ftecnica li li:last-child {
+            color: sienna;
+        }
+
+        #betsy {
+            color: darkblue;
+        }
+
+        main>section>section>ul>li:last-child {
+            color: silver;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Breaking Bad</h1>
+        <h2>Serie de televisión</h2>
+    </header>
+    <main>
+        <section>
+            <h2>Argumento:</h2>
+            <p>Walter White (Bryan Cranston) es un frustrado
+                profesor de química en un instituto, padre de un joven
+                discapacitado y con una mujer (Anna Gunn) embarazada.</p>
+        </section>
+        <section id="ftecnica">
+            <h2>Ficha técnica:</h2>
+            <ul>
+                <li>Año:
+                    <span class="enfasis">2008</span>
+                </li>
+                <li>País:
+                    <span>EEUU</span>
+                </li>
+                <li>Idiomas:
+                    <span>Inglés</span>
+                    ,
+                    <span>Español</span>
+                </li>
+                <li>
+                    <span>Productores ejecutivos:</span>
+                    <ul>
+                        <li>Vince Gilligan</li>
+                        <li>Mark Johnson</li>
+                        <li>Michelle MacLaren</li>
+                    </ul>
+                </li>
+            </ul>
+            <section>
+                <h2>Protagonistas:</h2>
+                <ul>
+                    <li id="bryan" class="main">Bryan Cranston</li>
+                    <li>Aaron Paul</li>
+                    <li>Anna Gunn</li>
+                    <li>Dean Norris</li>
+                    <li id="betsy">Betsy Brandt</li>
+                </ul>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <p>Datos obtenidos de
+            <span class="enfasis">Wikipedia</span>
+            y otros sitios
+        </p>
+    </footer>
+</body>
