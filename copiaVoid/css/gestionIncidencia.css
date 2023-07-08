@@ -1,0 +1,100 @@
+.nueva-incidencia{
+    text-align: center;
+    display: block;
+}
+
+.nueva-incidencia div{
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+
+.nueva-incidencia label{
+    text-align: right;
+    margin-right: 1rem;
+}
+
+.nueva-incidencia form{
+    padding: 10px;
+}
+.nueva-incidencia div{
+    margin-bottom: 1rem;
+}
+
+#comentario{
+    width: 100%;
+}
+
+.desc textarea{
+    width: 100%;
+}
+
+.desc label{
+    vertical-align: top;
+}
+
+.nueva-incidencia input, textarea{
+    max-width: 80%;
+    padding-left: 5px;
+}
+
+.estado{
+    text-align: center;
+}
+
+.estado h3{
+    text-align: left;
+}
+
+.estado input{
+    margin-right: 0.5rem;
+    margin-top: 10px;
+}
+
+.estado input:first-of-type{
+    margin-left: 0.5rem;
+}
+
+.estado .envio{
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.estado label{
+    margin-right: 2.5rem;
+}
+
+.imagenes{
+    text-align: center;
+}
+
+.imagenes img{
+    max-width: 15%;
+    min-width: 15%;
+}
+
+.imagenes input[type="file"]{
+    display: none;
+}
+
+.botonesIncidencia {
+    display: block;
+    text-align: center;
+    justify-content: center;
+}
+
+.botonesIncidencia label{
+    font-size:x-large;
+    padding: 0.2rem 0.7rem 0.6rem 0.7rem;
+    cursor: pointer;
+    border: 1px solid rgb(75,75,75);
+    border-radius: 1rem;
+}
+
+.botonesIncidencia label:hover{
+    background-color: #4ecdc570;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.botonesIncidencia input, label{
+    margin-left: 0.5rem;
+}
